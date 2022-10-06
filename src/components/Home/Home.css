@@ -1,0 +1,54 @@
+.home-container {
+   background:linear-gradient( 90deg,rgb(255, 255, 255), rgba(255, 255, 255, 0.3)), url(../../../public/img/background-header.png) no-repeat;
+   /* url(../../../public/img/author-imgae.png); */
+   background-size: cover;
+   height: 100vh;
+   width: 100%;
+   background-position: right bottom;
+   background-attachment: fixed;
+   display: flex;
+   align-items: center;
+   justify-content: start;
+   padding-left: 20rem;
+
+}
+.home-container h1 {
+   font-size: 5rem;
+   color: var(--main-color);
+}
+.developer-info p {
+   font-size: 3rem;
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   text-transform: capitalize;
+   font-weight: 600;
+   margin-top: 1rem;
+}
+.home-container p span {
+   color: var(--primary-orange);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+}
+
+.home-container p span .styles-module_blinkingCursor__yugAC {
+   color: var(--main-color) !important;
+   font-style: italic !important;
+   
+   
+}
+
+
+/* ===========================
+   Responsive Break Points 
+   ============================ */
+
+   @media screen and (min-width: 0px ) and (max-width: 578px){
+      .home-container {
+         padding-left: 1rem;
+         justify-content: center;
+      
+      }
+   }

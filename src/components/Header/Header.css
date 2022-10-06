@@ -1,0 +1,131 @@
+.menu-bar{
+   width: 20rem;
+   height: 100vh;
+   display: flex;
+   justify-content: start;
+   padding-left: 2rem;
+   align-items: center;
+   position: fixed;
+   top: 0;
+   left: 0;
+   transition: all 1.2s ease;
+   -webkit-transition: all 1.2s ease;
+   -moz-transition: all 1.2s ease;
+   -ms-transition: all 1.2s ease;
+   -o-transition: all 1.2s ease;
+}
+
+.menu{
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+   color: var(--primary);  
+}
+.menu a {
+   color: var(--main-color);
+   display: flex;
+   gap: 0.5rem;
+   align-items: center;
+   justify-content: center;
+   background: var(--primary);
+   width: 5rem;
+   height: 5rem;
+   border-radius:2.5rem ;
+   -webkit-border-radius:2.5rem ;
+   -moz-border-radius:2.5rem ;
+   -ms-border-radius:2.5rem ;
+   -o-border-radius:2.5rem ;
+   padding: 2.5rem;
+   transition: 0.3s all ease-in, 0.1s border-radius ease-in-out;
+   -webkit-transition: 0.3s all ease-in, 0.1s border-radius ease-in-out;
+   -moz-transition: 0.3s all ease-in, 0.1s border-radius ease-in-out;
+   -ms-transition: 0.3s all ease-in, 0.1s border-radius ease-in-out;
+   -o-transition: 0.3s all ease-in, 0.1s border-radius ease-in-out;
+   text-transform: capitalize;
+   overflow: hidden;
+   box-shadow: 0.1rem 0.1rem 1rem var(--main-color);
+   font-weight: 400;
+}
+.menu a .side-text{
+   color:var(--header-color);
+   font-weight: 600;
+   color: var(--white-color);
+   display: none;
+   transition:0.5s all ease ;
+   -webkit-transition:0.5s all ease ;
+   -moz-transition:0.5s all ease ;
+   -ms-transition:0.5s all ease ;
+   -o-transition:0.5s all ease ;
+}
+
+.menu a:hover{
+   justify-content: start;
+   width: 15rem;
+   border-radius: 2.5rem;
+   -webkit-border-radius: 2.5rem;
+   -moz-border-radius: 2.5rem;
+   -ms-border-radius: 2.5rem;
+   -o-border-radius: 2.5rem;
+   color: var(--primary);
+   background: var(--main-color);
+   
+}
+.nav-icon{
+   color: var(--main-color)
+}
+.menu a:hover .side-text{
+   display: inline-block;
+   margin-left: 0.6rem;
+}
+.menu a:hover .nav-icon{
+   color: var(--primary);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.active{
+   color: var(--primary)!important;
+   background: var(--main-color) !important;
+}
+.active .nav-icon{
+   color: var(--primary)!important;
+}
+
+
+.menuToggler{
+   display:none ;
+   position: absolute;
+   top: 3rem;
+   right: 3rem;
+   font-size: 3rem;
+   
+}
+
+
+/* ===========================
+   Responsive Break Points 
+   ============================ */
+
+@media screen and (min-width: 0px ) and (max-width: 578px){
+   .closeMenu{
+      width: 0rem;
+      position: absolute;
+      top: 0;
+      left: -50rem;
+   
+}
+   .openMenu{
+      width: 20rem;
+      top: 0;
+      position: absolute;
+      left: 0;
+      background:var(--primary-white);
+      z-index: 1;
+   }
+   .menuToggler{
+      display: block;
+   }
+
+
+}
