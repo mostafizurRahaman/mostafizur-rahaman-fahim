@@ -1,13 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/*======================== */
+/* Basic Typo-grapy Start */
+/*======================== */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&family=Raleway:ital,wght@0,400;0,600;0,700;1,400;1,500&display=swap");
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+html {
+   font-size: 65.5%;
+}
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+   width: 100%;
+   font-family: "Oswald", sans-serif;
+   font-family: "Raleway", sans-serif;
+}
+:root {
+   --primary: #fff;
+   --main-color: #6a5acd;
+   --primary-orange: #ff6f00;
+   --primary-dark: #2a2828;
+   --primary-white: #ffffffe6;
+}
+p {
+   font-size: 1.8rem;
+   font-family: "Raleway", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-family: "Raleway", sans-serif;
+   font-weight: 700;
+}
+h1 {
+   font-size: 4rem;
+}
+h2 {
+   font-size: 3.5rem;
+}
+h3 {
+   font-size: 3rem;
+}
+h4 {
+   font-size: 2.5rem;
+}
+h5 {
+   font-size: 2rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a {
+   text-decoration: none;
+   font-size: 1.8rem;
+}
+
+img {
+   width: 100%;
+   height: auto;
+}
+/*======================== */
+/* Basic Typo-grapy End */
+/*======================== */
+
+@keyframes rotation {
+   0% {
+      transform: scale(0.5);
+   }
+   100% {
+      transform: scale(1);
+   }
+}
+
+/* ===========================
+    Responsive Break Points 
+  =======================*/
+@media screen and (min-width: 0px) and (max-width: 578px) {
+   html {
+      font-size: 50%;
+   }
 }

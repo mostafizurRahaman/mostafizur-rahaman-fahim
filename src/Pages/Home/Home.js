@@ -1,6 +1,6 @@
 import React from 'react';
 import { Typewriter } from 'react-simple-typewriter';
-import SocialSite from '../SocialSite/SocialSite';
+import SocialSite from '../Shared/SocialSite/SocialSite';
 import './Home.css'; 
 
 

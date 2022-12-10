@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaHome, FaUser, FaCopy,FaServer , FaCode } from "react-icons/fa";
+import { FaHome, FaUser, FaServer , FaCode, FaDownload} from "react-icons/fa";
 import {BsTelephoneFill} from 'react-icons/bs';
 import {ImMenu} from "react-icons/im"; 
 import {AiFillCloseCircle}  from 'react-icons/ai'; 
@@ -25,7 +25,7 @@ const Header = () => {
 
                <NavLink to='/about-us' className={({isActive})=> isActive ? 'active' : undefined} onClick={handleToggle}> <span className='nav-icon'><FaUser/></span><span className='side-text' >About</span></NavLink>
 
-               <NavLink to='/portfolio' className={({isActive})=> isActive ? 'active' : undefined} onClick={handleToggle}><span className='nav-icon'><FaCopy/></span><span className='side-text'>Portfolio</span></NavLink>
+               <a href='https://drive.google.com/file/d/1wPzZyH1_ihm5FtiQtCAfQUVl1emGx1Hz/view?usp=share_link'  download='Mostafizur_rahaman_resume' target="blank" onClick={handleToggle}> <span className='nav-icon'><FaDownload/></span><span className='side-text'> resume</span></a>
 
                <NavLink to='/skills' className={({isActive})=> isActive ? 'active' : undefined} onClick={handleToggle}><span className='nav-icon'><FaCode/></span><span className='side-text' >Skills</span></NavLink>
 
