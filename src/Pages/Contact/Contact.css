@@ -1,5 +1,7 @@
 .contact-form{
  background: linear-gradient( 90deg,rgb(255, 255, 255), rgba(255, 255, 255, 0.3)); 
+ background-attachment: fixed;
+ background-position: center center;
   
 }
 

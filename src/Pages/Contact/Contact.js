@@ -6,7 +6,7 @@ import "./Contact.css";
 const Contact = () => {
    
    return (
-      <div className="flex  items-center justify-center p-12 flex-col gap-7 bg-blue-400 contact-form mt-10">
+      <div className="flex  items-center justify-center p-12 flex-col gap-7 bg-blue-400 contact-form">
          <h2 className="capitalize text-4xl text-primary before:w-1/2 before:h-1 before:inline-block pb-3   before:absolute inline-block relative before:bottom-0 before:bg-primary-500 text-center my-5  mt-10 ">
             Contact With me
          </h2>
