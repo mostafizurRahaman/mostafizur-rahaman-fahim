@@ -71,7 +71,8 @@
    
 }
 .nav-icon{
-   color: var(--main-color)
+   color: var(--main-color);
+   font-size:1.8rem; 
 }
 .menu a:hover .side-text{
    display: inline-block;
@@ -107,12 +108,12 @@
    Responsive Break Points 
    ============================ */
 
-@media screen and (min-width: 0px ) and (max-width: 578px){
+@media screen and (min-width: 0px ) and (max-width: 1023px){
    .closeMenu{
       width: 0rem;
       position: absolute;
       top: 0;
-      left: -50rem;
+      left: -50rem; 
    
 }
    .openMenu{

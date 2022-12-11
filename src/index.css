@@ -26,8 +26,7 @@ body {
    --primary-white: #ffffffe6;
 }
 p {
-   font-size: 1.8rem;
-   font-family: "Raleway", sans-serif;
+   line-height: 1.8em;
 }
 h1,
 h2,
@@ -54,10 +53,7 @@ h5 {
    font-size: 2rem;
 } */
 
-a {
-   text-decoration: none;
-   font-size: 1.8rem;
-}
+
 
 img {
    width: 100%;
@@ -83,4 +79,45 @@ img {
    html {
       font-size: 50%;
    }
+}
+
+
+.title{
+   font-size: 3.8rem;
+   color: var(--main-color);
+   text-align: center ;
+   padding-bottom: 10px;
+   position: relative;
+   margin: 20px 0px;
+}
+
+.title::after{
+  content: '';
+  width: 50px;
+  height: 4px;
+  background: var(--main-color);
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%,0% );
+  -webkit-transform: translate(-50%,0% );
+  -moz-transform: translate(-50%,0% );
+  -ms-transform: translate(-50%,0% );
+  -o-transform: translate(-50%,0% );
+}
+.title::before{
+  content: '';
+  width: 150px;
+  height: 1px;
+  background: rgb(167, 168, 168);
+  display: block;
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, -100% );
+  -webkit-transform: translate(-50%, -100% );
+  -moz-transform: translate(-50%, -100% );
+  -ms-transform: translate(-50%, -100% );
+  -o-transform: translate(-50%, -100% );
 }

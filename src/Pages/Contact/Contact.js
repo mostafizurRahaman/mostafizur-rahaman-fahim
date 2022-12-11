@@ -7,11 +7,11 @@ const Contact = () => {
    
    return (
       <div className="flex  items-center justify-center p-12 flex-col gap-7 bg-blue-400 contact-form">
-         <h2 className="capitalize text-4xl text-primary before:w-1/2 before:h-1 before:inline-block pb-3   before:absolute inline-block relative before:bottom-0 before:bg-primary-500 text-center my-5  mt-10 ">
+         <h2 className="title">
             Contact With me
          </h2>
          <form action="https://formsubmit.co/fahim654326@gmail.com" method="POST"
-            className="grid grid-cols-1 md:grid-cols-2 gap-10 w-4/5"
+            className="grid grid-cols-1 md:grid-cols-2 gap-10 w-4/5 my-10"
          >
             <div className="flex flex-col w-full  gap-4">
                <label className="text-xl font-bold" htmlFor="first-name">

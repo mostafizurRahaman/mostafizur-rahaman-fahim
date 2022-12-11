@@ -14,23 +14,23 @@ const Header = () => {
       
    return (
      <>
-          <div className='menuToggler' onClick={handleToggle} >
+          <div className='menuToggler z-50 ' onClick={handleToggle} >
                {
                   open ? <AiFillCloseCircle/> : <ImMenu/>
                }
          </div>
          <nav  className={`menu-bar ${open ? "openMenu" : "closeMenu"}`}>
             <ul className='menu' >
-               <NavLink to='/home' className={({isActive})=> isActive ? 'active' : undefined} onClick={handleToggle}> <span className='nav-icon'><FaHome/></span> <span className='side-text'>Home</span></NavLink>
+               <NavLink  to='/home' className={`text-2xl ${({isActive})=> isActive ? 'active' : undefined}`} onClick={handleToggle}> <span className='nav-icon'><FaHome/></span> <span className='side-text'>Home</span></NavLink>
 
-               <NavLink to='/about-us' className={({isActive})=> isActive ? 'active' : undefined} onClick={handleToggle}> <span className='nav-icon'><FaUser/></span><span className='side-text' >About</span></NavLink>
+               <NavLink to='/about-us' className={`text-2xl ${({isActive})=> isActive ? 'active' : undefined}`} onClick={handleToggle}> <span className='nav-icon'><FaUser/></span><span className='side-text' >About</span></NavLink>
 
-               <a href='https://drive.google.com/file/d/1wPzZyH1_ihm5FtiQtCAfQUVl1emGx1Hz/view?usp=share_link'  download='Mostafizur_rahaman_resume' target="blank" onClick={handleToggle}> <span className='nav-icon'><FaDownload/></span><span className='side-text'> resume</span></a>
+               <a href='https://drive.google.com/file/d/1wPzZyH1_ihm5FtiQtCAfQUVl1emGx1Hz/view?usp=share_link'  download='Mostafizur_rahaman_resume' className='text-2xl' target="blank" onClick={handleToggle}> <span className='nav-icon'><FaDownload/></span><span className='side-text'> resume</span></a>
 
-               <NavLink to='/skills' className={({isActive})=> isActive ? 'active' : undefined} onClick={handleToggle}><span className='nav-icon'><FaCode/></span><span className='side-text' >Skills</span></NavLink>
+               <NavLink to='/skills' className={`text-2xl ${({isActive})=> isActive ? 'active' : undefined}`} onClick={handleToggle}><span className='nav-icon'><FaCode/></span><span className='side-text' >Skills</span></NavLink>
 
-               <NavLink to='/services' className={({isActive})=> isActive ? 'active' : undefined} onClick={handleToggle}><span className='nav-icon'><FaServer/></span><span className='side-text'>services</span></NavLink>
-               <NavLink to='/contact-us' className={({isActive})=> isActive ? 'active' : undefined} onClick={handleToggle}><span className='nav-icon'><BsTelephoneFill/></span><span className='side-text'>Contact</span></NavLink>
+               <NavLink to='/services' className={`text-2xl ${({isActive})=> isActive ? 'active' : undefined}`} onClick={handleToggle}><span className='nav-icon'><FaServer/></span><span className='side-text'>services</span></NavLink>
+               <NavLink to='/contact-us' className={`text-2xl ${({isActive})=> isActive ? 'active' : undefined}`} onClick={handleToggle}><span className='nav-icon'><BsTelephoneFill/></span><span className='side-text'>Contact</span></NavLink>
 
             </ul>
          </nav>
