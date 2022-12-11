@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaHome, FaUser, FaServer , FaCode, FaDownload} from "react-icons/fa";
+import { FaHome, FaUser, FaBlogger , FaCode, FaDownload} from "react-icons/fa";
 import {BsTelephoneFill} from 'react-icons/bs';
 import {ImMenu} from "react-icons/im"; 
 import {AiFillCloseCircle}  from 'react-icons/ai'; 
@@ -29,7 +29,9 @@ const Header = () => {
 
                <NavLink to='/skills' className={`text-2xl ${({isActive})=> isActive ? 'active' : undefined}`} onClick={handleToggle}><span className='nav-icon'><FaCode/></span><span className='side-text' >Skills</span></NavLink>
 
-               <NavLink to='/services' className={`text-2xl ${({isActive})=> isActive ? 'active' : undefined}`} onClick={handleToggle}><span className='nav-icon'><FaServer/></span><span className='side-text'>services</span></NavLink>
+               <NavLink to='/blog' className={`text-2xl ${({isActive})=> isActive ? 'active' : undefined}`} onClick={handleToggle}><span className='nav-icon'><FaBlogger/></span><span className='side-text' >Blog</span></NavLink>
+
+               {/* <NavLink to='/services' className={`text-2xl ${({isActive})=> isActive ? 'active' : undefined}`} onClick={handleToggle}><span className='nav-icon'><FaServer/></span><span className='side-text'>services</span></NavLink> */}
                <NavLink to='/contact-us' className={`text-2xl ${({isActive})=> isActive ? 'active' : undefined}`} onClick={handleToggle}><span className='nav-icon'><BsTelephoneFill/></span><span className='side-text'>Contact</span></NavLink>
 
             </ul>

@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../Layout/Main/Main";
 import About from "../Pages/About/About";
+import Blog from "../Pages/Blog/Blog";
 import Contact from "../Pages/Contact/Contact";
 import Home from "../Pages/Home/Home";
 import SingleProject from "../Pages/SingleProject/SingleProject";
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
          path: '/project/:id', 
          element: <SingleProject></SingleProject>, 
          loader: ({params}) => fetch(`http://localhost:5000/projects/${params.id}`)
+      }, 
+      {
+         path: "/blog", 
+         element: <Blog></Blog>, 
       }
    ]}
  ])
