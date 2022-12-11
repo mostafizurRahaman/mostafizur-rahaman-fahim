@@ -14,6 +14,7 @@
    -ms-transition: all 1.2s ease;
    -o-transition: all 1.2s ease;
    z-index: 50;
+   
 }
 
 .menu{
@@ -122,14 +123,19 @@
 }
    .openMenu{
       width: 20rem;
+      
       top: 0;
-      position: absolute;
+      position: fixed;
       left: 0;
       background:var(--primary-white);
       z-index: 1;
    }
    .menuToggler{
       display: block;
+      position: fixed;
+      top: 50px;
+      right: 25px;
+
    }
 
 

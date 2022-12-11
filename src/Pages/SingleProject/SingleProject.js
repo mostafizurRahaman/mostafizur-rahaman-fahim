@@ -30,8 +30,8 @@ const SingleProject = () => {
                      Project pages:{" "}
                   </h3>
                   <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10 ">
-                     {pictures.map((pic) => (
-                        <div className="p-5 rounded-lg project" data-aos="zoom-in">
+                     {pictures.map((pic, idx) => (
+                        <div className="p-5 rounded-lg project" data-aos="zoom-in" key={idx}>
                            <img src={pic} alt="pic" className="rounded-lg" />
                         </div>
                      ))}
@@ -42,8 +42,8 @@ const SingleProject = () => {
                      Technology used
                   </h3>
                   <div className="flex flex-wrap gap-5 mb-20 justify-center">
-                     {technology.map((tech) => (
-                        <button className="px-10 rounded-lg  py-2 bg-primary text-secondary text-xl  font-bold capitalize">
+                     {technology.map((tech, idx) => (
+                        <button key={idx} className="px-10 rounded-lg  py-2 bg-primary text-secondary text-xl  font-bold capitalize">
                            {tech}
                         </button>
                      ))}

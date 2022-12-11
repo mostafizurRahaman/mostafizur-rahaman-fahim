@@ -15,7 +15,7 @@ html {
    scroll-behavior: smooth;
 }
 body {
-   width: 100%;
+   max-width: 100%;
    font-family: "Oswald", sans-serif;
    font-family: "Raleway", sans-serif;
    scroll-behavior: smooth;
