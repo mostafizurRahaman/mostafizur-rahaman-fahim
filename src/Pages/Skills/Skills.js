@@ -3,7 +3,7 @@ import "./Skills.css";
 
 const Skills = () => {
    return (
-      <div className="my-20 md:pl-48 px-5">
+      <div className="my-20 md:pl-48 px-5 z-0">
          <h2 className="title">My Skills</h2>
          <div className="flex items-center gap-3 lg:gap-12 w-full lg:flex-row flex-col ">
             <div className=" w-full lg:w-1/2">

@@ -8,7 +8,7 @@
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
   border: 2px solid var(--main-color);
- 
+  z-index: 3;
 }
  .skill_progress{
    height: 16px;
