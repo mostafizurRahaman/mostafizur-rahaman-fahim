@@ -12,11 +12,13 @@
 }
 html {
    font-size: 65.5%;
+   scroll-behavior: smooth;
 }
 body {
    width: 100%;
    font-family: "Oswald", sans-serif;
    font-family: "Raleway", sans-serif;
+   scroll-behavior: smooth;
 }
 :root {
    --primary: #fff;
@@ -121,3 +123,43 @@ img {
   -ms-transform: translate(-50%, -100% );
   -o-transform: translate(-50%, -100% );
 }
+
+.title2{
+   font-size: 22px;
+   color: var(--main-color);
+   text-align: center ;
+   padding-bottom: 20px;
+   position: relative;
+   margin: 20px 0px;
+   
+}
+.title2::after{
+   content: '';
+   width: 50px;
+   height: 4px;
+   background: var(--main-color);
+   display: block;
+   position: absolute;
+   bottom: 0;
+   left: 50%;
+   transform: translate(-50%,0% );
+   -webkit-transform: translate(-50%,0% );
+   -moz-transform: translate(-50%,0% );
+   -ms-transform: translate(-50%,0% );
+   -o-transform: translate(-50%,0% );
+ }
+ .title2::before{
+   content: '';
+   width: 150px;
+   height: 1px;
+   background: rgb(167, 168, 168);
+   display: block;
+   position: absolute;
+   bottom: 0%;
+   left: 50%;
+   transform: translate(-50%, -100% );
+   -webkit-transform: translate(-50%, -100% );
+   -moz-transform: translate(-50%, -100% );
+   -ms-transform: translate(-50%, -100% );
+   -o-transform: translate(-50%, -100% );
+ }

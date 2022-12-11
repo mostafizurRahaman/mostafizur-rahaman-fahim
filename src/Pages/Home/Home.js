@@ -7,9 +7,9 @@ import Projects from "./Projects/Projects";
 const Home = () => {
    return (
       <div>
-         <div className="home-container">
-            <div className="developer-info">
-               <h1>Mostafizur Rahaman</h1>
+         <div className="home-container"  data-aos="zoom-out-left">
+            <div className="developer-info" >
+               <h1 >Mostafizur Rahaman</h1>
                <p>
                   I'm{" "}
                   <span>

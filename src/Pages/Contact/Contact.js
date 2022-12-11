@@ -6,14 +6,14 @@ import "./Contact.css";
 const Contact = () => {
    
    return (
-      <div className="flex  items-center justify-center p-12 flex-col gap-7 bg-blue-400 contact-form">
+      <div className="flex  items-center justify-center p-12 flex-col gap-7 bg-blue-400 contact-form" data-aos="fade-up">
          <h2 className="title">
             Contact With me
          </h2>
          <form action="https://formsubmit.co/fahim654326@gmail.com" method="POST"
             className="grid grid-cols-1 md:grid-cols-2 gap-10 w-4/5 my-10"
          >
-            <div className="flex flex-col w-full  gap-4">
+            <div className="flex flex-col w-full  gap-4" data-aos="fade-right">
                <label className="text-xl font-bold" htmlFor="first-name">
                   {" "}
                   First Name:{" "}
@@ -29,7 +29,7 @@ const Contact = () => {
                />
                
             </div>
-            <div className="flex flex-col w-full  gap-4">
+            <div className="flex flex-col w-full  gap-4" data-aos='fade-left'>
                <label className="text-xl font-bold" htmlFor="last-name">
                   last Name:{" "}
                </label>
@@ -44,7 +44,7 @@ const Contact = () => {
                />
                
             </div>
-            <div className="flex flex-col w-full  gap-4">
+            <div className="flex flex-col w-full  gap-4" data-aos="fade-right">
                <label className="text-xl font-bold" htmlFor="email">
                   email:
                </label>
@@ -59,7 +59,7 @@ const Contact = () => {
                />
                
             </div>
-            <div className="flex flex-col w-full gap-4">
+            <div className="flex flex-col w-full gap-4" data-aos='fade-left'>
                <label className="text-xl font-bold" htmlFor="phone">
                   Mobile Number :{" "}
                </label>
@@ -74,7 +74,7 @@ const Contact = () => {
                />
                
             </div>
-            <div className="flex flex-col w-full  gap-4 col-span-1 md:col-span-2">
+            <div className="flex flex-col w-full  gap-4 col-span-1 md:col-span-2" data-aos="zoom-in">
                <label className="text-xl font-bold" htmlFor="message">
                   Message:{" "}
                </label>

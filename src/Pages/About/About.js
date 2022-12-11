@@ -2,8 +2,9 @@ import React from "react";
 import author from "../../Assets/author-imgae.png";
 const About = () => {
    return (
-      <div className="pl-5 pr-5 lg:pl-48 ">
-         <h1 className="title">About Me</h1>
+      <div className="pl-5 pr-5 lg:pl-48 " data-aos="zoom-out-right">
+        <div data-aos="zoom-in-right">
+        <h1 className="title">About Me</h1>
          <p className="font-semibold text-2xl my-5 text-neutral text-justify">
             I’m a Frontend Web Developer (MERN) & Computer Science Student. I
             have been learning web development for a year & still learning. As
@@ -11,12 +12,13 @@ const About = () => {
             website. I aim to be a senior Frontend Web Developer in the next 2
             years & also try to update myself with new technologies.
          </p>
+        </div>
 
          <div className="flex items-start flex-col lg:flex-row gap-10">
-            <div className="w-full lg:w-1/2">
+            <div className="w-full lg:w-1/2" data-aos="flip-right">
                <img src={author} alt="" />
             </div>
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-col gap-3" data-aos="flip-left">
                <h2 className="font-bold  text-[20px] lg:text-5xl my-5 text-neutral uppercase ">
                   Frontend Web Developer (Mern Stack)
                </h2>

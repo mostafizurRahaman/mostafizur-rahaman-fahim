@@ -3,10 +3,10 @@ import "./Skills.css";
 
 const Skills = () => {
    return (
-      <div className="my-20 md:pl-48 px-5 z-0">
+      <div className="my-20 md:pl-48 px-5 z-0" data-aos="fade-down">
          <h2 className="title">My Skills</h2>
-         <div className="flex items-center gap-3 lg:gap-12 w-full lg:flex-row flex-col ">
-            <div className=" w-full lg:w-1/2">
+         <div className="flex items-center gap-3 lg:gap-12 w-full lg:flex-row flex-col " >
+            <div className=" w-full lg:w-1/2" data-aos="flip-right">
                <div class="skill mt-3 html">
                   <div class="skill_name text-primary font-bold uppercase text-2xl ml-2 mb-2 -z-10">
                      html
@@ -56,7 +56,7 @@ const Skills = () => {
                   </div>
                </div>
             </div>
-            <div className="w-full lg:w-1/2 ">
+            <div className="w-full lg:w-1/2 " data-aos="flip-left">
                <div class="skill mt-3  react">
                   <div class="skill_name text-primary font-bold uppercase text-2xl ml-2 mb-2 reactjs">
                      REACT
