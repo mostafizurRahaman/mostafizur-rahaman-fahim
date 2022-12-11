@@ -1,0 +1,141 @@
+.skill_bar{
+  width: 100%;
+  height: 20px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border: 2px solid var(--main-color);
+ 
+}
+ .skill_progress{
+   height: 16px;
+   border-radius: 8px;
+   -webkit-border-radius: 8px;
+   -moz-border-radius: 8px;
+   -ms-border-radius: 8px;
+   -o-border-radius: 8px;
+   position: relative;
+   background: var(--main-color);
+}
+  .html .skill_progress{
+   max-width: 95%;
+   animation: indicator 5s ease-in 0.1s infinite;
+   -webkit-animation: indicator 5s ease-in 0.1s infinite;
+}
+ .css .skill_progress{
+   max-width: 90%;
+   animation: indicator 5s ease-in 0.1s infinite;
+  -webkit-animation: indicator 5s ease-in 0.1s infinite;
+ }
+ .javascript .skill_progress{
+   max-width: 80%;
+   animation: indicator 5s ease-in 0.1s infinite;
+  -webkit-animation: indicator 5s ease-in 0.1s infinite;
+ } 
+ .bootstrap .skill_progress{
+   max-width: 98%;
+   animation: indicator 5s ease-in 0.1s infinite;
+   -webkit-animation: indicator 5s ease-in 0.1s infinite;
+ } 
+ .tailwindcss .skill_progress{
+   max-width: 95%;
+   animation: indicator 5s ease-in 0.1s infinite;
+   -webkit-animation: indicator 5s ease-in 0.1s infinite;
+ } 
+
+ .github .skill_progress{
+   max-width: 90%;
+   animation: indicator 5s ease-in 0.1s infinite;
+   -webkit-animation: indicator 5s ease-in 0.1s infinite;
+ }
+
+ .react .skill_progress{
+   max-width: 80%;
+   animation: indicator 5s ease-in 0.1s infinite;
+   -webkit-animation: indicator 5s ease-in 0.1s infinite;
+ }
+
+ .express .skill_progress{
+   max-width: 75%;
+   animation: indicator 5s ease-in 0.1s infinite;
+   -webkit-animation: indicator 5s ease-in 0.1s infinite;
+ }
+
+ .node .skill_progress {
+   max-width: 25%; 
+   animation: indicator 5s ease-in 0.1s infinite;
+   -webkit-animation: indicator 5s ease-in 0.1s infinite;
+ } 
+
+ .mongoDb .skill_progress { 
+   max-width: 80%;
+   animation: indicator 5s ease-in 0.1s infinite;
+   -webkit-animation: indicator 5s ease-in 0.1s infinite;
+ }
+
+ .firebase .skill_progress{
+   max-width: 98%;
+   animation:  indicator 5s ease-in 0.1s infinite;
+   -webkit-animation:  indicator 5s ease-in 0.1s infinite;
+}
+ .vercel .skill_progress{
+   max-width: 100%;
+   animation:  indicator 5s ease-in 0.1s infinite;
+   -webkit-animation:  indicator 5s ease-in 0.1s infinite;
+}
+
+ 
+ @keyframes indicator  {
+   from{width: 0;}
+   to{width: 100%;}
+
+ }
+ 
+ .skill_progress::before{
+   content: attr(per);
+   width: 35px;
+   background:black;
+   position: absolute;
+   color: white;
+   font-weight: 700;
+    text-align: center ;
+   padding:2px 5px;
+   top:-30px;
+   right: 0;
+   transform: translate(50%);
+   -webkit-transform: translate(50%);
+   -moz-transform: translate(50%);
+   -ms-transform: translate(50%);
+   -o-transform: translate(50%);
+   border-radius: 5px;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   -ms-border-radius: 5px;
+   -o-border-radius: 5px;
+   z-index: 2;
+ }
+ .skill_progress::after{
+   content: " ";
+   width: 14px;
+   height: 14px;
+   background: #000;
+   position: absolute;   
+   top:-15px;
+   right: 0;
+   display: block;
+   transform: translate(50%, -50%) rotate(45deg);
+   -webkit-transform: translate(50%, -50%) rotate(45deg);
+   -moz-transform: translate(50%, -50%) rotate(45deg);
+   -ms-transform: translate(50%, -50%) rotate(45deg);
+   -o-transform: translate(50%, -50%) rotate(45deg);
+   border-radius: 1px;
+   -webkit-border-radius: 1px;
+   -moz-border-radius: 1px;
+   -ms-border-radius: 1px;
+   -o-border-radius: 1px;
+   z-index: 1;
+}
+ 

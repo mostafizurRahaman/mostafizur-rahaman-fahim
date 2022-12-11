@@ -26,7 +26,7 @@ body {
    --primary-white: #ffffffe6;
 }
 p {
-   line-height: 1.8em;
+   line-height: 1.5em;
 }
 h1,
 h2,
@@ -75,11 +75,11 @@ img {
 /* ===========================
     Responsive Break Points 
   =======================*/
-@media screen and (min-width: 0px) and (max-width: 578px) {
+/* @media screen and (min-width: 0px) and (max-width: 578px) {
    html {
       font-size: 50%;
    }
-}
+} */
 
 
 .title{

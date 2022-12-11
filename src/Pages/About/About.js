@@ -17,14 +17,14 @@ const About = () => {
                <img src={author} alt="" />
             </div>
             <div className="flex flex-col gap-3">
-               <h2 className="font-bold text-5xl my-5 text-neutral">
+               <h2 className="font-bold  text-[20px] lg:text-5xl my-5 text-neutral uppercase ">
                   Frontend Web Developer (Mern Stack)
                </h2>
                <p className="text-2xl font-semibold text-justify">
                   I'm a full-stack web developer who has a wide range of skills
                   in React, Express JS, Node Js, MongoDB, Javascript, HTML, CSS, TailwindCSS,  Bootstrap 5, React Bootstrap, DaisyUI, Stripe, JWT, Firebase Authentication, API, REST API, GitHub, Git, Netlify, Vercel etc.
                </p>
-               <div className="flex items-start justify-between my-5">
+               <div className="flex items-start justify-between my-5 md:flex-row flex-col md:gap-0 gap-3">
                   <ul className="md:w-1/2 text-2xl   space-y-3 ">
                      <li>
                         {" "}

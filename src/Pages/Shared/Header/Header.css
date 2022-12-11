@@ -20,6 +20,7 @@
    flex-direction: column;
    gap: 2rem;
    color: var(--primary);  
+   z-index: 100;
 }
 .menu a {
    color: var(--main-color);
@@ -45,6 +46,7 @@
    overflow: hidden;
    box-shadow: 0.1rem 0.1rem 1rem var(--main-color);
    font-weight: 400;
+   z-index: 50;
 }
 .menu a .side-text{
    color:var(--header-color);
@@ -56,6 +58,7 @@
    -moz-transition:0.5s all ease ;
    -ms-transition:0.5s all ease ;
    -o-transition:0.5s all ease ;
+   
 }
 
 .menu a:hover{
